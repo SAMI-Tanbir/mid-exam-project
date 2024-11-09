@@ -1,0 +1,188 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set body and container to full height */
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #555;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-buttons a:hover {
+    background-color: #777;
+}
+
+/* Contact Page */
+.contact-page {
+    padding: 200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-page h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-page p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Contact Container Layout */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form .submit-btn {
+    padding: 12px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #FF6347;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info h2 {
+    font-size: 1.8em;
+    color: #FF6347;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.contact-info .social-links {
+    margin-top: 15px;
+}
+
+.contact-info .social-links a {
+    color: #FF6347;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.contact-info .social-links a:hover {
+    color: #FF4500;
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-links {
+    margin: 10px 0;
+}
+
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .social-links a:hover {
+    color: #aaa;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
